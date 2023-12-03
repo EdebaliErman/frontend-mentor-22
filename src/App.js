@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className="App">
-      <img className='z-0 absolute left-32' src={process.env.PUBLIC_URL+"./Assets/pattern-quotes.svg"} alt=''/>
+      <img className='z-0 absolute left-96 top-72' src={process.env.PUBLIC_URL+"./Assets/pattern-quotes.svg"} alt=''/>
       <Card
         name={data.name}
         img={data.img}
@@ -36,7 +36,7 @@ function App() {
           <img src={process.env.PUBLIC_URL + "./Assets/icon-next.svg"} alt='' />
         </button>
       </div>
-      <img className='z-0 absolute right-0 top-0' src={process.env.PUBLIC_URL+"./Assets/pattern-bg.svg"} alt=''/>
+      <img className='z-0 absolute right-80 top-20' src={process.env.PUBLIC_URL+"./Assets/pattern-bg.svg"} alt=''/>
       <img className='z-0 absolute left-0' src={process.env.PUBLIC_URL+"./Assets/pattern-curve.svg"} alt=''/>
     </div>
   );

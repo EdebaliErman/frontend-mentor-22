@@ -3,24 +3,30 @@
 @layer components {
     .Card {
         @apply flex justify-between items-start gap-4 z-10 relative w-full p-56 flex-col
+        md:gap-0 md:p-0 md:flex-col-reverse md:justify-center md:items-center 
     }
 
     .Card-text {
         @apply w-full gap-12 z-10 flex flex-col text-DarkBlue
+        md:gap-0 md:items-center md:justify-center md:m-6
     }
 
     h2 {
         @apply w-full z-10 text-3xl pr-64 text-left leading-[3rem]
+        md:p-0 md:text-2xl md:font-medium md:text-center md:flex md:justify-center md:items-center md:ml-36
+        md:mt-16 md:pt-40
     }
 
     .Card-text h4 {
-        @apply w-full text-2xl text-GrayishBlue font-extrabold
+        @apply w-full text-2xl text-GrayishBlue font-extrabold md:text-xl
+        md:absolute md:bottom-[-4.7rem] md:left-36 md:w-1/2 md:text-center
     }
     .Card-text h4 span {
         @apply font-bold text-DarkBlue
     }
     .Card img {
         @apply z-0 absolute right-[-1rem] top-10 shadow-2xl
+        md:relative md:z-10  md:right-0 md:top-48 md:left-20
     }
     
 }

@@ -5,11 +5,14 @@
   html,
   body {
     @apply  w-[1440px] h-full font-inner flex justify-center items-center
+    md:w-full
   }
  
   .buttons{
     @apply absolute right-[52rem] bottom-60 flex  z-20
     bg-white rounded-3xl shadow-xl shadow-gray-400 w-28 h-12 px-5 gap-8 justify-between items-center
+  
+    md:bottom-44 md:right-[48px]
   }
   
 }

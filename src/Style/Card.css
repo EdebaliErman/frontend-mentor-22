@@ -13,20 +13,20 @@
 
     h2 {
         @apply w-full z-10 text-3xl pr-64 text-left leading-[3rem]
-        md:p-0 md:text-2xl md:font-medium md:text-center md:flex md:justify-center md:items-center md:ml-36
-        md:mt-16 md:pt-40
+        md:p-0 md:text-2xl md:font-medium md:text-center md:flex md:justify-center md:items-center md:ml-20
+        md:mt-0 
     }
 
     .Card-text h4 {
-        @apply w-full text-2xl text-GrayishBlue font-extrabold md:text-xl
-        md:absolute md:bottom-[-4.7rem] md:left-36 md:w-1/2 md:text-center
+        @apply w-full text-2xl text-GrayishBlue font-extrabold md:text-xl 
+        md:absolute md:bottom-[-6rem] md:left-32 md:w-40 md:text-center 
     }
     .Card-text h4 span {
         @apply font-bold text-DarkBlue
     }
     .Card img {
         @apply z-0 absolute right-[-1rem] top-10 shadow-2xl
-        md:relative md:z-10  md:right-0 md:top-48 md:left-20
+        md:relative md:z-10  md:right-0 md:top-0 md:left-12 md:w-[375px] md:h-[375px]
     }
     
 }

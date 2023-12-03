@@ -1,14 +1,33 @@
+import { useEffect, useState } from 'react';
 import './App.css';
 import Card from './Components/Card.js/Card';
-import { profile } from './Data/data';
+import { profileFind } from './Hook/hook';
 
 function App() {
-  const profileFind = profile.find(item => item.id)
-  console.log(profileFind)
+  const [next, setNext] = useState(1)
+  const [data, setData] = useState(1)
 
+  useEffect(() => {
+    profileFind(next,setData)
+  },[next])
+
+  const counter = () => {
+    return next < 2 && setNext(next + 1)
+  }
+  const uncounter = () => {
+    return next > 1 && setNext(next - 1)
+  }
   return (
     <div className="App">
-      <Card />
+      <Card 
+      name={data.name}
+      img={data.img}
+      job={data.job}
+      pragraph={data.paragraph}
+      key={data.id}
+      />
+      <button onClick={counter}>+</button>
+      <button onClick={uncounter}>-</button>
     </div>
   );
 }

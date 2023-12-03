@@ -3,7 +3,7 @@ export const profile = [{
     id: 1,
     name: "Tanya Sinclair",
     img: "tanya.jpg",
-    job:"UX Engineer",
+    job: "UX Engineer",
     paragraph: `
     I've been interested in coding for a while but never taken the jump,until now.
      I couldn't recommend this course enough.
@@ -12,10 +12,12 @@ export const profile = [{
 }, {
     id: 2,
     name: "Jhon Tarkpor",
-    img: "jhon.jpg",
-    job:"Junior Front-end Developer",
-    paragraph: `
-If you want to lay the best foundation possible I'd recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a profesional developer.
+    img: "john.jpg",
+    job: "Junior Front-end Developer",
+    paragraph: `If you want to lay the best foundation possible 
+I'd recommend taking this course. 
+The depth the instructors go into is incredible.
+ I now feel so confident about starting up as a profesional developer.
     `}
 
 ]

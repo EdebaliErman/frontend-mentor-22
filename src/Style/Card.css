@@ -1,0 +1,26 @@
+@tailwind components;
+
+@layer components {
+    .Card {
+        @apply flex justify-between items-start gap-4 z-10 relative w-full p-56 flex-col
+    }
+
+    .Card-text {
+        @apply w-full gap-12 z-10 flex flex-col text-DarkBlue
+    }
+
+    h2 {
+        @apply w-full z-10 text-3xl pr-64 text-left leading-[3rem]
+    }
+
+    .Card-text h4 {
+        @apply w-full text-2xl text-GrayishBlue font-extrabold
+    }
+    .Card-text h4 span {
+        @apply font-bold text-DarkBlue
+    }
+    .Card img {
+        @apply z-0 absolute right-[-1rem] top-10 shadow-2xl
+    }
+    
+}
